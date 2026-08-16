@@ -19,11 +19,23 @@ url = "https://pastel-guanaco-198.convex.site/mcp"
 ```
 Then: `codex mcp login servadiscord`
 
-**Cursor** — add to `.cursor/mcp.json` in your project root:
+**Cursor / Windsurf / Kiro** — copy `.cursor/mcp.json`, `.windsurf/mcp.json`, or `.kiro/mcp.json` from this repo into your project root (all use the same format):
 ```json
 {
   "mcpServers": {
     "servadiscord": {
+      "url": "https://pastel-guanaco-198.convex.site/mcp"
+    }
+  }
+}
+```
+
+**VS Code Copilot Chat** — copy `.vscode/mcp.json` from this repo into your project root:
+```json
+{
+  "servers": {
+    "servadiscord": {
+      "type": "http",
       "url": "https://pastel-guanaco-198.convex.site/mcp"
     }
   }

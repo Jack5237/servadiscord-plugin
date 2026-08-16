@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "servadiscord": {
+      "type": "http",
+      "url": "https://pastel-guanaco-198.convex.site/mcp"
+    }
+  }
+}
