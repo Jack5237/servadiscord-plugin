@@ -19,28 +19,13 @@ url = "https://pastel-guanaco-198.convex.site/mcp"
 ```
 Then: `codex mcp login servadiscord`
 
-**Cursor / Windsurf / Kiro** — copy `.cursor/mcp.json`, `.windsurf/mcp.json`, or `.kiro/mcp.json` from this repo into your project root (all use the same format):
-```json
-{
-  "mcpServers": {
-    "servadiscord": {
-      "url": "https://pastel-guanaco-198.convex.site/mcp"
-    }
-  }
-}
-```
+**Cursor** — copy `.cursor/mcp.json` from this repo into your project root.
 
-**VS Code Copilot Chat** — copy `.vscode/mcp.json` from this repo into your project root:
-```json
-{
-  "servers": {
-    "servadiscord": {
-      "type": "http",
-      "url": "https://pastel-guanaco-198.convex.site/mcp"
-    }
-  }
-}
-```
+**Windsurf** — copy `.windsurf/mcp.json` and `.windsurf/rules/servadiscord.md` from this repo.
+
+**Kiro** — copy `.kiro/mcp.json` and `.kiro/steering/servadiscord.md` from this repo.
+
+**VS Code Copilot Chat** — copy `.vscode/mcp.json` and `.github/copilot-instructions.md` from this repo.
 
 **Gemini CLI**
 ```bash
@@ -52,9 +37,11 @@ gemini extensions install github.com/Jack5237/servadiscord-plugin
 https://pastel-guanaco-198.convex.site/mcp
 ```
 
+All MCP configs use the same server URL. Clients that support OAuth2 resource discovery (RFC 9728) authenticate automatically.
+
 ## Commands
 
-After installing in Claude Code or Codex, these slash commands are available:
+After installing in Claude Code or Codex:
 
 | Command | What it does |
 |---------|-------------|
@@ -64,8 +51,6 @@ After installing in Claude Code or Codex, these slash commands are available:
 | `/servadiscord:servadiscord-help` | List available node types |
 
 ## MCP tools
-
-The underlying tools, called automatically by the commands above:
 
 `list_workspaces` → `list_nodes` → `describe_node_type` → `add_node` / `update_node` / `toggle_node` / `remove_node`
 
