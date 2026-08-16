@@ -52,13 +52,21 @@ gemini extensions install github.com/Jack5237/servadiscord-plugin
 https://pastel-guanaco-198.convex.site/mcp
 ```
 
-## Usage
+## Commands
 
-Agents follow this sequence automatically:
+After installing in Claude Code or Codex, these slash commands are available:
 
-1. `list_workspaces` — pick the target workspace
-2. `list_nodes` — read the current graph
-3. `describe_node_type` — get the schema before any write
-4. `add_node` / `update_node` / `toggle_node` / `remove_node`
+| Command | What it does |
+|---------|-------------|
+| `/servadiscord:servadiscord` | General workspace assistant |
+| `/servadiscord:servadiscord-show` | Show current graph — all nodes, types, status |
+| `/servadiscord:servadiscord-add` | Guided flow to add a new node |
+| `/servadiscord:servadiscord-help` | List available node types |
+
+## MCP tools
+
+The underlying tools, called automatically by the commands above:
+
+`list_workspaces` → `list_nodes` → `describe_node_type` → `add_node` / `update_node` / `toggle_node` / `remove_node`
 
 See `AGENTS.md` for the full tool reference.
