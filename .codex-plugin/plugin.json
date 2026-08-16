@@ -1,0 +1,17 @@
+{
+  "name": "servadiscord",
+  "version": "0.1.0",
+  "description": "Manage ServaDiscord workspace graphs through MCP.",
+  "author": { "name": "ServaDiscord" },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ServaDiscord",
+    "shortDescription": "Manage ServaDiscord workspace graphs.",
+    "longDescription": "Connect Codex to your ServaDiscord workspaces through MCP.",
+    "developerName": "ServaDiscord",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "defaultPrompt": ["List my ServaDiscord workspaces."]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "servadiscord",
+  "owner": { "name": "ServaDiscord" },
+  "plugins": [
+    {
+      "name": "servadiscord",
+      "source": "./",
+      "description": "Manage ServaDiscord workspace graphs through MCP.",
+      "version": "0.1.0"
+    }
+  ]
+}
