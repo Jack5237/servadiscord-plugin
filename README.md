@@ -9,4 +9,4 @@ For Codex, add this to `~/.codex/config.toml` and run `codex mcp login servadisc
 url = "https://pastel-guanaco-198.convex.site/mcp"
 ```
 
-The server must be deployed before any client can connect. This package is not a universal installer: it supports MCP-capable clients only.
+Install from `https://github.com/Jack5237/servadiscord-plugin` after a release. The server must be deployed before any client can connect. This package is not a universal installer: it supports MCP-capable clients only.
