@@ -2,5 +2,27 @@
   "name": "servadiscord",
   "version": "0.1.0",
   "description": "Manage ServaDiscord workspace graphs through MCP.",
-  "author": { "name": "ServaDiscord" }
+  "author": {
+    "name": "ServaDiscord",
+    "url": "https://www.servadiscord.com"
+  },
+  "homepage": "https://www.servadiscord.com",
+  "repository": "https://github.com/Jack5237/servadiscord-plugin",
+  "license": "MIT",
+  "keywords": ["discord", "mcp", "workspace", "bot-builder", "no-code"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ServaDiscord",
+    "shortDescription": "Manage your Discord bot workspace graph",
+    "longDescription": "Connect Claude Code to ServaDiscord via MCP. List workspaces, inspect and edit graph nodes, add bot logic, and manage Discord server configuration — all without leaving your editor.",
+    "developerName": "ServaDiscord",
+    "category": "Productivity",
+    "capabilities": ["MCP tools"],
+    "websiteURL": "https://www.servadiscord.com",
+    "defaultPrompt": [
+      "List my ServaDiscord workspaces.",
+      "Show all nodes in my workspace.",
+      "Add a welcome message node to my bot."
+    ]
+  }
 }

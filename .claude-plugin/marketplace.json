@@ -1,12 +1,17 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "servadiscord",
-  "owner": { "name": "ServaDiscord" },
+  "description": "Connect Claude Code to your ServaDiscord workspace graph via MCP.",
+  "owner": {
+    "name": "ServaDiscord",
+    "url": "https://www.servadiscord.com"
+  },
   "plugins": [
     {
       "name": "servadiscord",
+      "description": "Manage ServaDiscord workspace graphs — list, add, update, toggle, and remove nodes — directly from Claude Code.",
       "source": "./",
-      "description": "Manage ServaDiscord workspace graphs through MCP.",
-      "version": "0.1.0"
+      "category": "productivity"
     }
   ]
 }

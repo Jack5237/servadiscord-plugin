@@ -2,13 +2,20 @@
   "name": "servadiscord",
   "version": "0.1.0",
   "description": "Manage ServaDiscord workspace graphs through MCP.",
-  "author": { "name": "ServaDiscord" },
+  "author": {
+    "name": "ServaDiscord",
+    "url": "https://www.servadiscord.com"
+  },
+  "homepage": "https://www.servadiscord.com",
+  "repository": "https://github.com/Jack5237/servadiscord-plugin",
+  "license": "MIT",
+  "keywords": ["discord", "mcp", "workspace", "bot-builder", "no-code"],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "ServaDiscord",
-    "shortDescription": "Manage ServaDiscord workspace graphs.",
-    "longDescription": "Connect Codex to your ServaDiscord workspaces through MCP.",
+    "shortDescription": "Manage your Discord bot workspace graph",
+    "longDescription": "Connect Codex to ServaDiscord via MCP. List workspaces, inspect and edit graph nodes, add bot logic, and manage Discord server configuration.",
     "developerName": "ServaDiscord",
     "category": "Productivity",
     "capabilities": ["Write"],
