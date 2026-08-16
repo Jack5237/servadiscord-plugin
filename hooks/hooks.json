@@ -1,12 +1,16 @@
 {
-  "SessionStart": [
-    {
-      "hooks": [
-        {
-          "type": "command",
-          "command": "node hooks/session-start.js"
-        }
-      ]
-    }
-  ]
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "exec node \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.js\"",
+            "commandWindows": "if (Get-Command node -ErrorAction SilentlyContinue) { node \"$env:CLAUDE_PLUGIN_ROOT\\hooks\\session-start.js\" }",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
 }
