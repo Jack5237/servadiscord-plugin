@@ -1,6 +1,6 @@
 {
   "name": "servadiscord",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Manage ServaDiscord workspace graphs through MCP.",
   "author": {
     "name": "ServaDiscord",
@@ -12,6 +12,7 @@
   "keywords": ["discord", "mcp", "workspace", "bot-builder", "no-code"],
   "skills": "./skills/",
   "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "ServaDiscord",
     "shortDescription": "Manage your Discord bot workspace graph",
