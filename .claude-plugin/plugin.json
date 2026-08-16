@@ -1,6 +1,6 @@
 {
   "name": "servadiscord",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Manage ServaDiscord workspace graphs through MCP.",
   "author": {
     "name": "ServaDiscord",
