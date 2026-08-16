@@ -6,8 +6,6 @@ This package connects MCP-capable agents to a ServaDiscord workspace graph using
 
 ### Codex
 
-Add this to `~/.codex/config.toml`, then run `codex mcp login servadiscord`:
-
 For Codex, add this to `~/.codex/config.toml` and run `codex mcp login servadiscord`:
 
 ```toml
