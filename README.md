@@ -2,7 +2,7 @@
 
 Manage your ServaDiscord workspace graph from any MCP-capable AI agent.
 
-**MCP server:** `https://pastel-guanaco-198.convex.site/mcp` (OAuth2)
+**MCP server:** `https://unique-bullfrog-891.convex.site/mcp` (OAuth2)
 
 ## Install
 
@@ -15,7 +15,7 @@ Manage your ServaDiscord workspace graph from any MCP-capable AI agent.
 **Codex** — add to `~/.codex/config.toml`:
 ```toml
 [mcp_servers.servadiscord]
-url = "https://pastel-guanaco-198.convex.site/mcp"
+url = "https://unique-bullfrog-891.convex.site/mcp"
 ```
 Then: `codex mcp login servadiscord`
 
@@ -34,7 +34,7 @@ gemini extensions install github.com/Jack5237/servadiscord-plugin
 
 **Cline / other Streamable-HTTP clients** — paste the server URL into your MCP settings:
 ```
-https://pastel-guanaco-198.convex.site/mcp
+https://unique-bullfrog-891.convex.site/mcp
 ```
 
 All MCP configs use the same server URL. Clients that support OAuth2 resource discovery (RFC 9728) authenticate automatically.
