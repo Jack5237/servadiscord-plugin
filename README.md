@@ -1,6 +1,12 @@
 # ServaDiscord MCP plugin
 
-This package contains the Codex, Claude Code, and Gemini CLI installation manifests for the ServaDiscord MCP server.
+This package connects MCP-capable agents to a ServaDiscord workspace graph using OAuth.
+
+## Install
+
+### Codex
+
+Add this to `~/.codex/config.toml`, then run `codex mcp login servadiscord`:
 
 For Codex, add this to `~/.codex/config.toml` and run `codex mcp login servadiscord`:
 
@@ -9,4 +15,17 @@ For Codex, add this to `~/.codex/config.toml` and run `codex mcp login servadisc
 url = "https://pastel-guanaco-198.convex.site/mcp"
 ```
 
-Install from `https://github.com/Jack5237/servadiscord-plugin` after a release. The server must be deployed before any client can connect. This package is not a universal installer: it supports MCP-capable clients only.
+### Claude Code
+
+```text
+/plugin marketplace add Jack5237/servadiscord-plugin
+/plugin install servadiscord@servadiscord
+```
+
+### Gemini CLI
+
+```bash
+gemini extensions install github.com/Jack5237/servadiscord-plugin
+```
+
+Other Streamable-HTTP MCP clients can use `.mcp.json`. This supports MCP-capable clients only.
