@@ -58,10 +58,18 @@ After installing in Claude Code or Codex:
 | `/servadiscord:servadiscord` | General workspace assistant |
 | `/servadiscord:servadiscord-show` | Show current graph — all nodes, types, status |
 | `/servadiscord:servadiscord-add` | Guided flow to add a new node |
-| `/servadiscord:servadiscord-help` | List available node types |
+| `/servadiscord:servadiscord-help` | List available node types and commands |
+| `/servadiscord:servadiscord-setup` | Build a workspace for a new server from scratch |
+| `/servadiscord:servadiscord-status` | Check or change bot on/off, activity status, restart |
+| `/servadiscord:servadiscord-welcome` | Welcome and leave messages |
+| `/servadiscord:servadiscord-moderation` | Warnings, auto-mod rules, punishments |
+| `/servadiscord:servadiscord-tickets` | Support tickets or modmail |
+| `/servadiscord:servadiscord-autoresponder` | Keyword reply rules |
 
 ## MCP tools
 
-`list_workspaces` → `list_nodes` → `describe_node_type` → `add_node` / `update_node` / `toggle_node` / `remove_node`
+`list_workspaces` → `get_workspace` → `list_nodes` → `list_node_types` → `describe_node_type` → `add_node` / `update_node` / `toggle_node` / `remove_node`
+
+Also: `create_workspace`, `rename_workspace`, `whoami`.
 
 See `AGENTS.md` for the full tool reference.

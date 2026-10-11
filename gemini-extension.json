@@ -1,6 +1,6 @@
 {
   "name": "servadiscord",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "mcpServers": {
     "servadiscord": {
       "httpUrl": "https://unique-bullfrog-891.convex.site/mcp"

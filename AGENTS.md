@@ -6,10 +6,12 @@ You are connected to a ServaDiscord workspace via MCP. Use the tools below to in
 
 Always follow this sequence:
 
-1. `list_workspaces` — find the target workspace. Confirm with the user before mutating if it is ambiguous.
-2. `list_nodes` — inspect the current graph before adding or changing anything.
-3. `describe_node_type` — fetch the schema for any node type before writing its `data` field. Use the returned schema exactly; never guess field names.
-4. Mutate with `add_node`, `update_node`, `toggle_node`, or `remove_node`.
+1. `list_workspaces` — find the target workspace. Confirm with the user before mutating if it is ambiguous. None yet? `create_workspace`.
+2. `get_workspace` — role, bot enabled, token configured, premium available.
+3. `list_nodes` — inspect the current graph before adding or changing anything.
+4. `list_node_types` — choose a type. Each type exists once per workspace; update instead of adding a second.
+5. `describe_node_type` — fetch the schema for any node type before writing its `data` field. Use the returned schema exactly; never guess field names.
+6. Mutate with `add_node`, `update_node`, `toggle_node`, or `remove_node`.
 
 ## Tools
 
@@ -17,6 +19,10 @@ Always follow this sequence:
 |------|-------------|
 | `whoami` | Return the authenticated user ID |
 | `list_workspaces` | List the caller's workspaces, with their role |
+| `get_workspace` | Role, node count, bot enabled, token configured (never the token), premium available |
+| `create_workspace` | Create a workspace (`workspace_limit` on the free tier limit) |
+| `rename_workspace` | Rename a workspace (owner only) |
+| `list_node_types` | Every node type: description, addable, premium |
 | `list_nodes` | List all nodes in a workspace graph |
 | `describe_node_type` | Get the JSON schema for a node type's `data` field |
 | `add_node` | Add a node to the graph |
@@ -30,3 +36,5 @@ Always follow this sequence:
 - Call `describe_node_type` before every `add_node` or `update_node` — node schemas evolve.
 - Confirm the target workspace before any mutation when the user has more than one.
 - The root `GeneralSettingsNode` is locked — never remove or replace it.
+- Premium node types fail without a subscription — check `get_workspace.premium` first.
+- Edits are saved to the workspace, not pushed to Discord; tell the user to apply them from the dashboard.
