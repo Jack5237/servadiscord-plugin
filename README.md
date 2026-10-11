@@ -11,6 +11,7 @@ Manage your ServaDiscord workspace graph from any MCP-capable AI agent.
 /plugin marketplace add Jack5237/servadiscord-plugin
 /plugin install servadiscord@servadiscord
 ```
+MCP only, no plugin: `claude mcp add --transport http servadiscord https://unique-bullfrog-891.convex.site/mcp`
 
 **Codex** — add to `~/.codex/config.toml`:
 ```toml
@@ -38,6 +39,15 @@ https://unique-bullfrog-891.convex.site/mcp
 ```
 
 All MCP configs use the same server URL. Clients that support OAuth2 resource discovery (RFC 9728) authenticate automatically.
+
+## Sign in
+
+1. Install the plugin (above).
+2. **Claude Code:** run `/mcp`, select `servadiscord`, then **Authenticate**. Your browser opens the ServaDiscord sign-in page; approve access and return to the terminal.
+   **Codex:** `codex mcp login servadiscord`. **Other clients:** they prompt on first tool use, or use the client's MCP "Authenticate / Login" action.
+3. Try `/servadiscord:servadiscord-show`, or ask "List my ServaDiscord workspaces."
+
+Don't have an account? Sign up at https://www.servadiscord.com first, then authenticate.
 
 ## Commands
 
