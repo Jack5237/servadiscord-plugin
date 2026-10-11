@@ -15,7 +15,8 @@ Always follow this sequence:
 
 | Tool | What it does |
 |------|-------------|
-| `list_workspaces` | List the caller's workspaces |
+| `whoami` | Return the authenticated user ID |
+| `list_workspaces` | List the caller's workspaces, with their role |
 | `list_nodes` | List all nodes in a workspace graph |
 | `describe_node_type` | Get the JSON schema for a node type's `data` field |
 | `add_node` | Add a node to the graph |

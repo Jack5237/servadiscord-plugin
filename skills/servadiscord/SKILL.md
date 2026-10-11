@@ -14,7 +14,8 @@ description: Manage a ServaDiscord workspace graph through MCP tools — list wo
 
 | Tool | Required args | Notes |
 |------|---------------|-------|
-| `list_workspaces` | — | Returns `[{ _id, name }]` |
+| `whoami` | — | Returns the authenticated user ID |
+| `list_workspaces` | — | Returns the workspaces the caller can access, with their role |
 | `list_nodes` | `workspaceId` | Returns all nodes with `id`, `type`, `data`, `enabled` |
 | `describe_node_type` | `type` | Returns JSON schema for that node's `data` field |
 | `add_node` | `workspaceId`, `type`, `data` | Optional: `parentNodeId` |
